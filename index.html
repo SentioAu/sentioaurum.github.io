@@ -49,17 +49,57 @@
 
   </section>
 
-  <section class="contact">
-    <h2>Inquiries</h2>
-    <p>
-      For serious inquiries, please email:
-      <br />
-      <strong>contact@sentioaurum.com</strong>
-    </p>
+  <section class="contact" id="inquire">
+  <h2>Inquire / Make an Offer</h2>
+  <p class="sub">
+    Submit your use case + budget. I respond to serious inquiries only.
+    All transactions are completed via Escrow.
+  </p>
+
+  <form class="inquiry-form" action="https://formspree.io/f/xdannogb" method="POST">
+    <!-- Domain selection (auto-filled when clicking "Inquire" buttons) -->
+    <label>
+      Domain
+      <input id="domainField" name="domain" type="text" placeholder="e.g., Entte.com" required />
+    </label>
+
+    <label>
+      Your email
+      <input name="email" type="email" placeholder="you@company.com" required />
+    </label>
+
+    <label>
+      Intended use
+      <input name="use_case" type="text" placeholder="What are you building?" required />
+    </label>
+
+    <label>
+      Budget range (USD)
+      <select name="budget" required>
+        <option value="" selected disabled>Select a range</option>
+        <option>$1,000–$2,500</option>
+        <option>$2,500–$5,000</option>
+        <option>$5,000–$10,000</option>
+        <option>$10,000–$25,000</option>
+        <option>$25,000+</option>
+      </select>
+    </label>
+
+    <label>
+      Message (optional)
+      <textarea name="message" rows="4" placeholder="Timeline, brand preferences, or questions..."></textarea>
+    </label>
+
+    <!-- Simple anti-bot honeypot -->
+    <input type="text" name="_gotcha" style="display:none" />
+
+    <button class="btn" type="submit">Submit inquiry</button>
     <p class="note">
-      All transactions completed via Escrow.
+      Security note: I will never ask you to “verify wallet” or sign suspicious transactions.
     </p>
-  </section>
+  </form>
+</section>
+
 
   <footer>
     <p>© SentioAurum</p>
