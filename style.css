@@ -68,3 +68,66 @@ footer {
   font-size: 14px;
   color: #666;
 }
+.sub {
+  color: #bcbcbc;
+  margin-top: 8px;
+}
+
+.inquiry-form {
+  margin-top: 18px;
+  text-align: left;
+  display: grid;
+  gap: 14px;
+}
+
+.inquiry-form label {
+  display: grid;
+  gap: 6px;
+  color: #dcdcdc;
+  font-size: 14px;
+}
+
+.inquiry-form input,
+.inquiry-form select,
+.inquiry-form textarea {
+  background: #131313;
+  border: 1px solid #2a2a2a;
+  color: #eaeaea;
+  padding: 10px 12px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.inquiry-form input:focus,
+.inquiry-form select:focus,
+.inquiry-form textarea:focus {
+  border-color: #3a3a3a;
+}
+
+.domain-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #2a2a2a;
+  background: #151515;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #1a1a1a;
+}
+
+.btn.small {
+  padding: 8px 12px;
+  border-radius: 10px;
+  width: fit-content;
+}
